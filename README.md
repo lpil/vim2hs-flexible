@@ -47,6 +47,10 @@ If you do not want to have to write your own snippets I recommend [Honza's
 vim-snippets](https://github.com/honza/vim-snippets) plugin. It is of high
 quality, and is actively maintained.
 
+### vim2hs-flexible will not highlight if another plugin already has
+
+This should make it play nicer with other plugins.
+
 Installation
 ------------
 
