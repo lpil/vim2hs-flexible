@@ -3,6 +3,13 @@
 
 *"Vim to Haskell": A collection of vimscripts for Haskell development.*
 
+History
+-------
+
+vim2hs-flexible is a fork of [dag's vim2hs](https://github.com/dag/vim2hs) that
+aims to allow the user more control over the plugin's behaviour. The original
+was a little aggressive.
+
 Features
 --------
 
@@ -22,10 +29,23 @@ Features
 * Unicode conceals for various operators and syntax, such as lambda and
   function composition.
 * Integrates with third-party plugins, but doesn't require them:
-  snippets for UltiSnips and patterns for Tabular.
+  patterns for Tabular.
 * Posts buffers and line-ranges to [hpaste.org](http://hpaste.org).
 * Highly configurable, most of the above can be disabled if it gets in the
   way.
+
+Differences from vim2hs
+-----------------------
+
+### Snippets have been removed
+
+[Ultisnips](https://github.com/SirVer/ultisnips) does not allow a user to
+opt-out of snippet loading, thus anyone using vim2hs is forced to use dag's
+Haskell snippets if they use the original vim2hs.
+
+If you do not want to have to write your own snippets I recommend [Honza's
+vim-snippets](https://github.com/honza/vim-snippets) plugin. It is of high
+quality, and is actively maintained.
 
 Installation
 ------------
@@ -213,13 +233,6 @@ it globally like so:
 ```vim
 let g:hpaste_author = 'donri'
 ```
-
-### UltiSnips
-
-If you're using the excellent
-[UltiSnips](https://github.com/sirver/ultisnips) Vimscript, vim2hs provides
-some useful snippets for Haskell programming.  You can list all active
-snippets by hitting `Ctrl+Tab` in INPUT mode.
 
 ### Tabular
 
